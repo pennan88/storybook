@@ -1,39 +1,39 @@
-import Image from "next/image";
-import { Meta, Story } from "@storybook/react";
-import { Button, Props } from "../components/Button/index";
+import Image from 'next/image'
+import { Meta, Story } from '@storybook/react'
+import { Button, Props } from '../components/Button/index'
 
 const meta: Meta = {
-  title: "Button",
+  title: 'Components/Button',
   component: Button,
   argTypes: {
     children: {
-      defaultValue: "Default Text",
+      defaultValue: 'Default Text',
     },
   },
-};
+}
 
-export default meta;
+export default meta
 
-const Template: Story<Props> = (args) => <Button {...args} />;
+const Template: Story<Props> = (args) => <Button {...args} />
 
-export const Square = Template.bind({});
+export const Square = Template.bind({})
 Square.args = {
-  variant: "Square",
-  children: "Square",
-};
-export const Long = Template.bind({});
+  variant: 'Square',
+  children: 'Square',
+}
+export const Long = Template.bind({})
 Long.args = {
-  variant: "Long",
-  children: "shesh",
-};
-export const Small = Template.bind({});
+  variant: 'Long',
+  children: 'shesh',
+}
+export const Small = Template.bind({})
 Small.args = {
-  variant: "Small",
-  children: "small",
-};
-export const Circle = Template.bind({});
+  variant: 'Small',
+  children: 'small',
+}
+export const Circle = Template.bind({})
 
 Circle.args = {
-  variant: "Circle",
-  children: "Circle",
-};
+  variant: 'Circle',
+  children: 'Circle',
+}

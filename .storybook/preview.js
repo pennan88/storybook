@@ -1,5 +1,6 @@
-import "../styles/Button/ButtonStyle.scss";
-import "../styles/Navbar/NavbarStyles.scss";
+import "../styles/Components/Button/ButtonStyle.scss";
+import "../styles/Components/Navbar/NavbarStyles.scss";
+import "../styles/Components/Grid/Gridstyles.scss";
 import * as nextImage from "next/image";
 Object.defineProperty(nextImage, "default", {
   configurable: true,

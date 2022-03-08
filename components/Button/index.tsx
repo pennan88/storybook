@@ -1,37 +1,37 @@
-import React, { HtmlHTMLAttributes, ReactNode } from "react";
+import React, { HtmlHTMLAttributes, ReactNode } from 'react'
 
 export interface Props extends HtmlHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode;
-  variant: "Square" | "Long" | "Circle" | "Small";
+  children: ReactNode
+  variant: 'Square' | 'Long' | 'Circle' | 'Small'
 }
 
-export const Button = ({ children, variant = "Square", ...props }: Props) => {
+export const Button = ({ children, variant = 'Square', ...props }: Props) => {
   switch (variant) {
-    case "Square":
+    case 'Square':
       return (
         <button {...props} className={`button ${variant}`}>
           {children}
         </button>
-      );
-    case "Long":
+      )
+    case 'Long':
       return (
         <button {...props} className={`button ${variant}`}>
           {children}
         </button>
-      );
-    case "Circle":
+      )
+    case 'Circle':
       return (
         <button {...props} className={`button ${variant}`}>
           {children}
         </button>
-      );
-    case "Small":
+      )
+    case 'Small':
       return (
         <button {...props} className={`button ${variant}`}>
           {children}
         </button>
-      );
+      )
     default:
-      return null;
+      return null
   }
-};
+}
