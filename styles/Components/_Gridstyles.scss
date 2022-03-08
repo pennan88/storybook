@@ -1,0 +1,34 @@
+@import '../abstracts/numbers';
+
+.gridContainer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+@each $number in $numbers {
+  .grid-col-#{$number} {
+    grid-template-columns: repeat($number, 1fr);
+  }
+  .grid-row-#{$number} {
+    grid-template-rows: repeat($number, 1fr);
+  }
+  .col-span-#{$number} {
+    grid-column-start: span $number;
+  }
+  .col-start-#{$number} {
+    grid-column-start: $number;
+  }
+  .col-end-#{$number} {
+    grid-column-end: $number;
+  }
+  .row-span-#{$number} {
+    grid-row-start: span $number;
+  }
+  .row-start-#{$number} {
+    grid-row-start: $number;
+  }
+  .row-end-#{$number} {
+    grid-row-end: $number;
+  }
+}
