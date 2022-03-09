@@ -1,6 +1,4 @@
 import React, { ReactNode } from 'react'
-import GridChild from './gridchild'
-
 interface GridTypes {
   children: ReactNode
   className: string

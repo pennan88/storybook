@@ -31,4 +31,46 @@
   .row-end-#{$number} {
     grid-row-end: $number;
   }
+  .m-#{$number} {
+    margin: #{$number}rem;
+  }
+  .my-#{$number} {
+    margin: #{$number}rem 0;
+  }
+  .mx-#{$number} {
+    margin: 0 #{$number}rem;
+  }
+  .ml-#{$number} {
+    margin-left: #{$number}rem;
+  }
+  .mr-#{$number} {
+    margin-right: #{$number}rem;
+  }
+  .mt-#{$number} {
+    margin-top: #{$number}rem;
+  }
+  .mb-#{$number} {
+    margin-bottom: #{$number}rem;
+  }
+  .p-#{$number} {
+    padding: #{$number}em;
+  }
+  .py-#{$number} {
+    padding: #{$number}em 0;
+  }
+  .px-#{$number} {
+    padding: 0 #{$number}em;
+  }
+  .pl-#{$number} {
+    padding-left: #{$number}em;
+  }
+  .pr-#{$number} {
+    padding-right: #{$number}em;
+  }
+  .pt-#{$number} {
+    padding-top: #{$number}em;
+  }
+  .pb-#{$number} {
+    padding-bottom: #{$number}em;
+  }
 }
