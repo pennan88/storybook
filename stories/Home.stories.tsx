@@ -1,8 +1,17 @@
-import Home from "../pages/index";
+import { Meta, Story } from '@storybook/react'
+import { NextPage } from 'next'
+import Home from '../pages/index'
 
-export default {
-  title: "Pages/Home",
+const meta: Meta = {
+  title: 'Pages/Home',
   component: Home,
-};
+}
 
-export const HomePage = () => <Home />;
+export default meta
+
+const Template: Story = (args) => <Home {...args} />
+
+export const Homes = Template.bind({})
+Homes.args = {
+  children: '',
+}

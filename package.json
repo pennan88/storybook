@@ -2,7 +2,7 @@
   "name": "storybook",
   "version": "0.1.0",
   "private": true,
-  "prettier":{
+  "prettier": {
     "printWidth": 120,
     "singleQuote": true,
     "semi": false,
@@ -17,6 +17,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "framer-motion": "^6.2.8",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

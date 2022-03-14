@@ -1,12 +1,11 @@
-import React, { HTMLAttributes, ReactNode } from 'react'
 import Image from 'next/image'
-import { Button } from '../Button'
+import React, { HTMLAttributes } from 'react'
 import brand from '../../public/images/images.jpg'
+import { Button } from '../Button'
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   alt: string
 }
-
 const Navbar = ({ alt, ...props }: Props) => {
   return (
     <div {...props} className="navbarContainer">

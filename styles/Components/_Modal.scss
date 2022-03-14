@@ -1,0 +1,23 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+  border: 1px black solid;
+  border-radius: 10px;
+  position: relative;
+  width: clamp(50%, 80vw, 90%);
+  height: clamp(50%, 60vh, 90%);
+  padding: 1em;
+  background-color: ghostwhite;
+}
+
+.article {
+  flex-direction: column;
+  p {
+    overflow-y: auto;
+  }
+  h3 {
+    text-align: center;
+  }
+}
