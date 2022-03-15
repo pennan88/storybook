@@ -1,0 +1,40 @@
+@use "../abstracts//numbers" as *;
+
+.accordion-wrapper {
+  .accordion {
+    cursor: pointer;
+    display: flex;
+    border: 1px black solid;
+    width: $accordionWidth;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1.2em;
+    transition: 0.2s ease-in all;
+    &:hover {
+      background-color: lighten(gray, 20);
+    }
+    p {
+      &::after {
+        content: '^';
+      }
+    }
+  }
+
+  .accordion-content {
+    border: 1px black solid;
+    width: $accordionWidth;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2em 1.2em;
+    &.default {
+      background-color: red;
+    }
+    &.list {
+      background-color: blue;
+      color: white;
+    }
+    &.media {
+      background-color: blue;
+    }
+  }
+}

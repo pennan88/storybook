@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #444;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 1em;
+}
+
+.col {
+  color: white;
+  ul {
+    li {
+      list-style-type: none;
+      padding: 0.3em;
+    }
+  }
+}
+
+.col1 {
+}
+
+.col2 {
+  text-align: center;
+}
+
+.col3 {
+  text-align: end;
+
+  input {
+    background-color: darken(white, 5);
+    padding: 0.5em 0.3em;
+    border: 0;
+  }
+
+  button {
+    border-left: 1px solid black;
+    background-color: darken(white, 5);
+    padding: 0.5em 0.3em;
+  }
+}

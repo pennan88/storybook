@@ -5,11 +5,26 @@ import { Button, Props } from '../components/Button/index'
 const meta: Meta = {
   title: 'Components/Button',
   component: Button,
+  // Lägga till en egen background color till storybook
+  // parameters: {
+  //   backgrounds: {
+  //     values: [{ name: 'red', value: '#f00' }],
+  //   },
+  // },
   argTypes: {
+    variant: {},
     children: {
       defaultValue: 'Default Text',
     },
   },
+  // Här kan man lägga till en låtas div shjeesh
+  // decorators: [
+  //   (Story) => (
+  //     <div style={{ display: 'flex', width: '100', justifyContent: 'center' }}>
+  //       <Story />
+  //     </div>
+  //   ),
+  // ],
 }
 
 export default meta
@@ -21,6 +36,7 @@ Square.args = {
   variant: 'Square',
   children: 'Square',
 }
+
 export const Long = Template.bind({})
 Long.args = {
   variant: 'Long',
@@ -36,4 +52,10 @@ export const Circle = Template.bind({})
 Circle.args = {
   variant: 'Circle',
   children: 'Circle',
+}
+
+export const Test = Template.bind({})
+Test.args = {
+  ...Square.args,
+  children: 'Sheesh',
 }

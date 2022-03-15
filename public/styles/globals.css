@@ -838,10 +838,76 @@
   align-items: center;
 }
 
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444;
+  border: 1px black solid;
+  border-radius: 10px;
+  position: relative;
+  width: clamp(50%, 80vw, 90%);
+  height: clamp(50%, 60vh, 90%);
+  padding: 1em;
+  background-color: ghostwhite;
+}
+
+.article {
+  flex-direction: column;
+}
+.article p {
+  overflow-y: auto;
+}
+.article h3 {
+  text-align: center;
+}
+
+.accordion {
+  cursor: pointer;
+  display: flex;
+  border: 1px black solid;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.2em;
+  transition: 0.2s ease-in all;
+}
+.accordion:hover {
+  background-color: #b3b3b3;
+}
+
+.accordion-content {
+  border: 1px black solid;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2em 1.2em;
+}
+.accordion-content.default {
+  background-color: red;
+}
+.accordion-content.list {
+  background-color: blue;
+  color: white;
+}
+.accordion-content.media {
+  background-color: blue;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -850,8 +916,12 @@ a {
   text-decoration: none;
 }
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .globalWrapper {
