@@ -10,8 +10,8 @@ const Home: NextPage = () => {
   const close = () => setModalOpen(false)
   const open = () => setModalOpen(true)
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', height: '100vh' }}>
-      <Accordion className="accordion" header={'Sheesh'} variant="default">
+    <div className="container">
+      {/* <Accordion className="accordion" header={'Sheesh'} variant="default">
         <h1>deez</h1>
       </Accordion>
 
@@ -24,14 +24,51 @@ const Home: NextPage = () => {
             <p>TEHShf</p>
           </Submenu>
         </Submenu>
-      </Accordion>
+      </Accordion> */}
 
-      <Submenu title={'Guider'}>
-        <p>22</p>
-        <p>22</p>
-        <p>22</p>
-        <p>22</p>
-      </Submenu>
+      <h2 className="mb-2">Grid System</h2>
+      <div className="row gap-2 justify-center">
+        <Accordion className="accordion col-12-xs col-5-sm col-3-xl" header={'Accordion'} variant={'list'}>
+          <Submenu title="test">
+            <p>test</p>
+          </Submenu>
+        </Accordion>
+        <Accordion className="accordion col-12-xs col-5-sm col-3-xl" header={'Accordion'} variant={'list'}>
+          <Submenu title="test">
+            <p>test</p>
+          </Submenu>
+        </Accordion>
+        <Accordion className="accordion col-12-xs col-5-sm col-3-xl" header={'Accordion'} variant={'list'}>
+          <Submenu title="test">
+            <p>test</p>
+          </Submenu>
+        </Accordion>
+        <Accordion className="accordion col-12-xs col-5-sm col-3-xl" header={'Accordion'} variant={'list'}>
+          <Submenu title="test">
+            <p>test</p>
+          </Submenu>
+        </Accordion>
+        <Accordion className="accordion col-12-xs col-5-sm col-3-xl" header={'Accordion'} variant={'list'}>
+          <Submenu title="test">
+            <p>test</p>
+          </Submenu>
+        </Accordion>
+        <Accordion className="accordion col-12-xs col-5-sm col-3-xl" header={'Accordion'} variant={'list'}>
+          <Submenu title="test">
+            <p>test</p>
+          </Submenu>
+        </Accordion>
+        <Accordion className="accordion col-12-xs col-5-sm col-3-xl" header={'Accordion'} variant={'list'}>
+          <Submenu title="test">
+            <p>test</p>
+          </Submenu>
+        </Accordion>
+        <Accordion className="accordion col-12-xs col-5-sm col-3-xl" header={'Accordion'} variant={'list'}>
+          <Submenu title="test">
+            <p>test</p>
+          </Submenu>
+        </Accordion>
+      </div>
     </div>
   )
 }
