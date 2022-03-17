@@ -1,18 +1,24 @@
-.navbarContainer {
+%flex-layout {
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  box-sizing: border-box;
+}
 
-  .childContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar {
+  @extend %flex-layout;
+  padding: $base-padding $base-padding * 2;
+  box-shadow: $base-box-shadow;
 
-    button {
-      margin: 0 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .container {
+    @extend %flex-layout;
+  }
+}
+
+@each $key, $val in $colors {
+  .navbar-#{$key} {
+    @extend .navbar;
+    background-color: $val;
   }
 }

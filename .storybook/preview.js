@@ -1,4 +1,4 @@
-import '../styles/globals.scss'
+import '../styles/index.scss'
 
 import * as nextImage from 'next/image'
 Object.defineProperty(nextImage, 'default', {

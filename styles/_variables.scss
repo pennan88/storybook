@@ -1,4 +1,10 @@
 // theme colors
+$green: #8bcb86;
+$cyan: #60c5b7;
+$blue: #66acd3;
+$black: #423a3d;
+$white: #ffffff;
+
 $primary: #326dee !default;
 $secondary: #1ac886 !default;
 $error: #d32752 !default;
@@ -10,15 +16,16 @@ $colors: (
   'secondary': $secondary,
   'error': $error,
   'info': $info,
-  'blue': #1919e6,
+  'blue': $blue,
+  'cyan': $cyan,
   'red': #e61919,
   'yellow': #e6e619,
-  'green': #19e635,
+  'green': $green,
   'orange': #ffa600,
   'purple': #9900ff,
   'gray': #808080,
-  'black': black,
-  'white': white,
+  'black': $black,
+  'white': $white,
 ) !default;
 
 $accordionWidth: 200px;

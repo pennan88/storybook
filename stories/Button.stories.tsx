@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Meta, Story } from '@storybook/react'
 import { Button, Props } from '../components/Button/index'
 
@@ -52,10 +51,4 @@ export const Circle = Template.bind({})
 Circle.args = {
   variant: 'Circle',
   children: 'Circle',
-}
-
-export const Test = Template.bind({})
-Test.args = {
-  ...Square.args,
-  children: 'Sheesh',
 }

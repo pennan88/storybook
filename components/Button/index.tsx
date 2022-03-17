@@ -9,25 +9,25 @@ export const Button = ({ children, variant = 'Square', ...props }: Props) => {
   switch (variant) {
     case 'Square':
       return (
-        <button {...props} className={`button ${variant}`}>
+        <button {...props} className={`btn-outlined-blue text-blue text-hover-white ${variant}`}>
           {children}
         </button>
       )
     case 'Long':
       return (
-        <button {...props} className={`button ${variant}`}>
+        <button {...props} className={`btn-outlined-blue text-blue text-hover-white ${variant}`}>
           {children}
         </button>
       )
     case 'Circle':
       return (
-        <button {...props} className={`button ${variant}`}>
+        <button {...props} className={`btn-outlined-blue text-blue text-hover-white ${variant}`}>
           {children}
         </button>
       )
     case 'Small':
       return (
-        <button {...props} className={`button ${variant}`}>
+        <button {...props} className={` btn-outlined-blue text-blue text-hover-white ${variant}`}>
           {children}
         </button>
       )
