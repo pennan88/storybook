@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import brand from '../public/images/images.jpg'
+import house from '../public/images/scaled-house.webp'
 import av from '../public/images/av.webp'
 import solskydd from '../public/images/solskydd.webp'
 
@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <>
       <div className="container mt-5">
         <div className="row justify-center">
-          <div className="col-12-xs col-5-md">
+          <div className="col-12-xs col-6-md">
             <h2>
               <div className="font-xxl"></div>
               <div className="font-xxl text-green">Your Website</div>
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
             </a>
           </div>
           <div className="col-12-xs col-5-md">
-            <Image src={brand} alt="" />
+            <Image src={house} alt="dasdsa" />
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
             <div className="col-12-xs col-6-md col-3-lg">
               <div className="card">
                 <h3 className="font-lg n-1 mb-2">AV</h3>
-                <Image src={av} />
+                <Image src={av} alt="dasdsa" />
                 <p className="m-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iure nostrum sit id maiores porro ut
                   at aliquam mollitia laudantium. Culpa et consequuntur delectus facilis a sapiente, temporibus nam
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
             <div className="col-12-xs col-6-md col-3-lg">
               <div className="card">
                 <h3 className="n-1 font-lg mb-2">Solskydd</h3>
-                <Image src={solskydd} />
+                <Image src={solskydd} alt="dasdsa" />
                 <p className="m-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iure nostrum sit id maiores porro ut
                   at aliquam mollitia laudantium. Culpa et consequuntur delectus facilis a sapiente, temporibus nam

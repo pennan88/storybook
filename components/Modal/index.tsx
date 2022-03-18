@@ -51,7 +51,7 @@ const Modal = ({ handleClose, variant, data }: ModalTypes) => {
             animate="visible"
             exit="exit"
           >
-            <Image src={brand} height="90%" width="90%" />
+            <Image src={brand} height="90%" width="90%" alt="dasdsa" />
             <p>SUSSY BAKA</p>
           </motion.div>
         </Backdrop>

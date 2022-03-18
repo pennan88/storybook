@@ -5389,6 +5389,34 @@ li {
   display: inline-block;
 }
 
+.position-rel {
+  position: relative;
+}
+
+.position-abs {
+  position: absolute;
+}
+
+.position-fix {
+  position: fixed;
+}
+
+.position-static {
+  position: static;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.position-i {
+  position: inherit;
+}
+
+.position-init {
+  position: initial;
+}
+
 .font-sm {
   font-size: 0.75rem;
 }

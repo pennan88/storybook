@@ -1,11 +1,15 @@
+// variables & functions
 @import 'abstracts/variables';
 
+// base & layout
 @import 'abstracts/base';
 @import 'abstracts/breakpoints';
 @import 'abstracts/grid';
 
+// colors
 @import 'abstracts/colors';
 
+// components (button, card, navbar etc)
 @import 'components/Accordion';
 @import 'components/Backdrop';
 @import 'components/Footer';
@@ -15,4 +19,5 @@
 @import 'components/button';
 @import 'components/card';
 
+// utilities (margin, padding, opacity, etc)
 @import 'abstracts/utilities';

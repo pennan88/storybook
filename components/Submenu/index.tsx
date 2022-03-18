@@ -9,7 +9,7 @@ interface SubmenuType extends ContentType, HTMLMotionProps<'div'> {
 const Submenu = ({ title, ...props }: SubmenuType) => {
   const [active, setActive] = useState(false)
   return (
-    <div className="submenu-wrapper">
+    <div className="submenu-wrapper position-abs">
       <motion.dt className="submenu" onClick={() => setActive(!active)}>
         {title}
       </motion.dt>

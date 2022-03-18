@@ -147,6 +147,18 @@ $utilities: (
       'i-b': inline-block,
     ),
   ),
+  'position': (
+    'prefix': 'position',
+    'values': (
+      'rel': relative,
+      'abs': absolute,
+      'fix': fixed,
+      'static': static,
+      'sticky': sticky,
+      'i': inherit,
+      'init': initial,
+    ),
+  ),
   'font-size': (
     'prefix': 'font',
     'values': (
