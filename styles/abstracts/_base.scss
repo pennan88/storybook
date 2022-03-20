@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: overlay;
+}
+
 a {
   text-decoration: none;
 }

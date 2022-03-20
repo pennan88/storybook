@@ -6,7 +6,7 @@ export interface ContentType {
 }
 
 const Submenuitem = ({ children }: ContentType) => {
-  return <motion.dd className="submenu-item">{children}</motion.dd>
+  return <motion.div className="submenu-item">{children}</motion.div>
 }
 
 export default Submenuitem

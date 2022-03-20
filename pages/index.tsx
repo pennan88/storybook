@@ -3,6 +3,8 @@ import Image from 'next/image'
 import house from '../public/images/scaled-house.webp'
 import av from '../public/images/av.webp'
 import solskydd from '../public/images/solskydd.webp'
+import Card from '../components/Card'
+import { Button } from '../components/Button'
 
 const Home: NextPage = () => {
   return (
@@ -28,7 +30,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <section id="about" className="bg-green-light-5 mt-5 pt-4 pb-4">
+      <section id="about" className="bg-green-light-3 mt-5 pt-4 pb-4">
         <div className="container text-black">
           <h2 className="mb-2">About Draper Sheesh</h2>
           <p>
@@ -60,32 +62,21 @@ const Home: NextPage = () => {
         <div className="container">
           <h2 className="mb-2">Some of Our Work</h2>
           <div className="row gap-2">
-            <div className="col-12-xs col-6-md col-3-lg">
-              <div className="card">
-                <h3 className="font-lg n-1 mb-2">AV</h3>
-                <Image src={av} alt="dasdsa" />
-                <p className="m-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iure nostrum sit id maiores porro ut
-                  at aliquam mollitia laudantium. Culpa et consequuntur delectus facilis a sapiente, temporibus nam
-                  eligendi?
-                </p>
-              </div>
-            </div>
-
-            <div className="col-12-xs col-6-md col-3-lg">
-              <div className="card">
-                <h3 className="n-1 font-lg mb-2">Solskydd</h3>
-                <Image src={solskydd} alt="dasdsa" />
-                <p className="m-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iure nostrum sit id maiores porro ut
-                  at aliquam mollitia laudantium. Culpa et consequuntur delectus facilis a sapiente, temporibus nam
-                  eligendi?
-                </p>
-              </div>
-            </div>
+            <Card className="col-12-xs col-6-md col-3-lg" title="AV" image={av}>
+              <p className="m-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto enim at rerum porro corrupti cumque
+                dicta, modi nam illum itaque soluta officiis non minus totam eum deserunt unde dolor nobis.
+              </p>
+            </Card>
+            <Card className="col-12-xs col-6-md col-3-lg" title="Solskydd" image={solskydd}>
+              <p className="m-1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto enim at rerum porro corrupti cumque
+                dicta, modi nam illum itaque soluta officiis non minus totam eum deserunt unde dolor nobis.
+              </p>
+            </Card>
           </div>
           <div className="row justify-flex-start mt-2">
-            <button className="btn-green text-white font-md">View All</button>
+            <Button className="btn-green text-white text-hover-white" children="View All" variant={'Small'} />
           </div>
         </div>
       </section>

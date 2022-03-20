@@ -5,29 +5,29 @@ export interface Props extends HtmlHTMLAttributes<HTMLButtonElement> {
   variant: 'Square' | 'Long' | 'Circle' | 'Small'
 }
 
-export const Button = ({ children, variant = 'Square', ...props }: Props) => {
+export const Button = ({ children, variant = 'Square', className, ...props }: Props) => {
   switch (variant) {
     case 'Square':
       return (
-        <button {...props} className={`btn-outlined-blue text-blue text-hover-white ${variant}`}>
+        <button {...props} className={`${className} ${variant}`}>
           {children}
         </button>
       )
     case 'Long':
       return (
-        <button {...props} className={`btn-outlined-blue text-blue text-hover-white ${variant}`}>
+        <button {...props} className={`${className} ${variant}`}>
           {children}
         </button>
       )
     case 'Circle':
       return (
-        <button {...props} className={`btn-outlined-blue text-blue text-hover-white ${variant}`}>
+        <button {...props} className={`${className} ${variant}`}>
           {children}
         </button>
       )
     case 'Small':
       return (
-        <button {...props} className={` btn-outlined-blue text-blue text-hover-white ${variant}`}>
+        <button {...props} className={` ${className} ${variant}`}>
           {children}
         </button>
       )

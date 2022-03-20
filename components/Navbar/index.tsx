@@ -6,6 +6,7 @@ import logo from '../../public/images/Logo.webp'
 import { AnimatePresence } from 'framer-motion'
 import Submenu from '../Submenu'
 import Submenuitem from '../Submenu/Submenuitem'
+import Link from 'next/link'
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   alt: string
@@ -16,13 +17,23 @@ const Navbar = ({ alt, ...props }: Props) => {
     <div {...props} className="navbar">
       <div className="container">
         <h1 className="site-title">
-          <Image height={50} width={200} src={logo} alt="dasdsa" />
+          <Link href="/">
+            <Image height={50} width={200} src={logo} alt="dasdsa" />
+          </Link>
         </h1>
         <ul className="display-f position-rel">
-          <li className="ml-2 font-lg text-hover-green">Products</li>
-          <li className="ml-2 font-lg text-hover-green">Screen surfaces</li>
-          <li className="ml-2 font-lg text-hover-green">Projector lifts</li>
-          <li className="ml-2 font-lg text-hover-green">Support</li>
+          <Link href="/products">
+            <a className="ml-2 font-lg text-hover-green">Products</a>
+          </Link>
+          <Link href="/screens">
+            <a className="ml-2 font-lg text-hover-green">Screen surfaces</a>
+          </Link>
+          <Link href="/projects">
+            <a className="ml-2 font-lg text-hover-green">Projector lifts</a>
+          </Link>
+          <Link href="/support">
+            <a className="ml-2 font-lg text-hover-green">Support</a>
+          </Link>
         </ul>
       </div>
     </div>

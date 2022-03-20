@@ -6,12 +6,18 @@ import '../styles/index.scss'
 import 'react-toastify/dist/ReactToastify.css'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+      }}
+    >
       <Navbar alt={'Sheesh'} />
       <Component {...pageProps} />
       <Footer />
-      <ToastContainer />
-    </>
+    </div>
   )
 }
 

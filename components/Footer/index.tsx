@@ -1,5 +1,5 @@
 import React from 'react'
-import { toast } from 'react-toastify'
+import { toast, ToastContainer } from 'react-toastify'
 import Grid from '../Grid'
 
 const Footer = () => {
@@ -14,12 +14,7 @@ const Footer = () => {
       progress: undefined,
     })
   return (
-    // <Grid className={'gridContainer grid-col-3'}>
-    //   <footer className="footer col-start-1 col-end-4 ">
-
-    //   </footer>
-    // </Grid>
-    <footer className="bg-green-light-5 mt-5 pt-4 pb-4">
+    <footer className="bg-green-light-5 mt-5 pt-2 pb-2">
       <div className="container">
         <div className="row gap-2 justify-center">
           <div className="col-12-xs col-6-md col-3-lg text-black ">
@@ -66,6 +61,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </footer>
   )
 }

@@ -4,8 +4,8 @@
   display: inline-block;
   border: 0;
   padding: $base-padding $base-padding * 2;
-  //   border-radius: $base-border-radius;
   background-color: $bg-color;
+  transition: 0.2s ease all;
   &.Square {
     width: 100px;
     height: 100px;
